@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/AndrewParkerTechnicalTester/Learning/_apis/build/status%2FAndrewParkerTechnicalTester.pipelines-java?branchName=main)](https://dev.azure.com/AndrewParkerTechnicalTester/Learning/_build/latest?definitionId=9&branchName=main)
 
 # Contributing
 
