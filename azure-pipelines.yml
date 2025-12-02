@@ -26,7 +26,16 @@ strategy:
     jdk17_windows:
       imageName: "windows-latest"
       jdkVersion: "1.17"
-  maxParallel: 6
+    jdk21_linux:
+      imageName: "ubuntu-latest"
+      jdkVersion: "1.21"
+    jdk21_mac:
+      imageName: "macOS-latest"
+      jdkVersion: "1.21"
+    jdk21_windows:
+      imageName: "windows-latest"
+      jdkVersion: "1.21"
+  maxParallel: 9
 
 pool:
   vmImage: $(imageName)
