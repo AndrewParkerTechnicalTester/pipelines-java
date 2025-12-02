@@ -8,6 +8,15 @@ trigger:
 
 strategy:
   matrix:
+    jdk8_linux:
+      imageName: "ubuntu-latest"
+      jdkVersion: "1.8"
+    jdk8_mac:
+      imageName: "macOS-latest"
+      jdkVersion: "1.8"
+    jdk8_windows:
+      imageName: "windows-latest"
+      jdkVersion: "1.8"
     jdk11_linux:
       imageName: "ubuntu-latest"
       jdkVersion: "1.11"
@@ -17,24 +26,15 @@ strategy:
     jdk11_windows:
       imageName: "windows-latest"
       jdkVersion: "1.11"
-    jdk17_linux:
+    default_linux:
       imageName: "ubuntu-latest"
-      jdkVersion: "1.17"
-    jdk17_mac:
+      jdkVersion: "default"
+    default_mac:
       imageName: "macOS-latest"
-      jdkVersion: "1.17"
-    jdk17_windows:
+      jdkVersion: "default"
+    default_windows:
       imageName: "windows-latest"
-      jdkVersion: "1.17"
-    jdk21_linux:
-      imageName: "ubuntu-latest"
-      jdkVersion: "1.21"
-    jdk21_mac:
-      imageName: "macOS-latest"
-      jdkVersion: "1.21"
-    jdk21_windows:
-      imageName: "windows-latest"
-      jdkVersion: "1.21"
+      jdkVersion: "default"
   maxParallel: 9
 
 pool:
